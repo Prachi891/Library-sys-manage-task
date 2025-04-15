@@ -1,0 +1,49 @@
+{% extends "home.html" %}
+{% block body %} 
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-6">
+    
+
+ 
+    <form method="POST" class ="card p-4 shadow-lg">
+        {% csrf_token %}
+        <h2 class="text-center">Borrow Book Record</h2>
+        <hr> 
+        
+        <div class="form-group">
+            <label for="exampleInputEmail1"> User Name</label>
+            <input name ="user_name" type="text" class="form-control" required placeholder="Enter username ">
+           
+          </div>
+    
+        <div class="form-group">
+            <label for="exampleInputEmail1">Book Borrow Date</label>
+            <input name ="borrow_date" type="date" class="form-control" required placeholder="borrow date" >
+            
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Return Date</label>
+            <input name ="return_date" type="date" class="form-control"  placeholder="return date">
+            
+        </div>  
+
+        <div class="form-group">
+            <label for="book">Select Book</label>
+            <select name="book" class="form-control">
+                {% for book in books %}
+                    <option value="{{ book.id }}">{{ book.title }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Add Borrow Book Record</button>
+    
+    </form> 
+    </div>
+    </div>
+
+
+</div>
+{% endblock %}

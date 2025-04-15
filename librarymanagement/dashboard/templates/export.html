@@ -1,0 +1,22 @@
+
+
+
+{% extends "home.html" %}
+{% block body %} 
+<div class="container mt-4"> 
+
+    
+    <h4 class="text-center mb-3">Export to Excel:</h4>
+    
+    
+
+    <div class="d-flex justify-content-center">
+    <a href="{% url 'export_authors' %}" class="btn btn-primary mx-2">Export Authors</a>
+    <a href="{% url 'export_books' %}" class="btn btn-info mx-2">Export Books</a>
+    <a href="{% url 'export_borrow_records' %}" class="btn btn-success mx-2">Export Borrow Records</a>
+  </div>
+</div> 
+
+
+{% endblock %}
+
