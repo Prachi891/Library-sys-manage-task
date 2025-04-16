@@ -17,11 +17,14 @@ Features:
 
 5.Export to Excel functionality (for Authors, Books, and Borrow Records) 
 
-# Admin Access: To log in to the admin panel, use the following credentials: Username: Prachi
+# 
+Admin login details
+  Username: Prachi
   Email: prachi@gmail.com
   Password: 12345 
 
-  # How to Run:
+  # 
+  How to Run:
   1.Clone the repository using git clone https://github.com/your-username/your-repo-name.git
   2.Install dependencies using pip install -r requirements.txt
   3 .Run migrations using:
