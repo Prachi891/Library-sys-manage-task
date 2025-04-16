@@ -25,8 +25,11 @@ Admin login details
 
   # 
   How to Run:
+  
   1.Clone the repository using git clone https://github.com/your-username/your-repo-name.git
+  
   2.Install dependencies using pip install -r requirements.txt
+  
   3 .Run migrations using:
 
   python manage.py makemigrations
